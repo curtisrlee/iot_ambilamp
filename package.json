@@ -4,10 +4,15 @@
   "description": "iot_project",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "test"
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "10.6.0",
+    "npm": "6.2.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
