@@ -21,3 +21,25 @@ exports.resetStats = function(req, res) {
 		res.send(err);
 	})
 }
+
+
+
+exports.getStats = function(req, res) {
+	db.Stats.findOne({})
+	.then( function(stats) {
+		res.json(stats);
+	})
+	.catch( function(err) {
+		res.send(err);
+	});
+}
+
+exports.editStats = function(req, res) {
+	db.Stats.findOneAndUpdate({}, req.body, {'new': true, upsert: true})
+	.then( function(editedStats) {
+		res.json(editedStats);
+	})
+	.catch( function(err) {
+		res.send(err);
+	});
+}
