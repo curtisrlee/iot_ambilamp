@@ -10,11 +10,11 @@ router.route('/data')
 	.post(dataHelpers.createData)
 	.delete(dataHelpers.deleteData);
 
-/*
+
 router.route('/data/:id')
-	.get()
-	.put()
-	.delete();
+	.get(dataHelpers.getOneData)
+	.put(dataHelpers.editData)
+	.delete(dataHelpers.deleteOneData);
 
 router.route('/settings')
 	.get()
@@ -23,6 +23,6 @@ router.route('/settings')
 router.route('/statistics')
 	.get()
 	.put()
-	.delete();
-*/
+	.delete(statsHelpers.resetStats);
+
 module.exports = router;
