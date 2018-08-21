@@ -1,0 +1,20 @@
+{
+  "name": "men_stack_webserver",
+  "version": "1.0.0",
+  "description": "iot_project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "gulp-help": "github:chmontgomery/gulp-help",
+    "mongoose": "^5.2.5",
+    "semantic-ui": "^2.3.3"
+  }
+}
