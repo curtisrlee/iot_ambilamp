@@ -4,7 +4,7 @@ var express     = require('express'),
 
 router.get('/', function(req, res) {
   
-  var setting;
+  var setting;z
     
   db.Settings.findOne({})
   .then( function(result){
