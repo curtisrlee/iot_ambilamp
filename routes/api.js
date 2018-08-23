@@ -21,7 +21,7 @@ router.route('/settings')
 
 router.route('/statistics')
 	.get(statsHelpers.getStats)
-	.put(statsHelpers.resetStats)
+	.put(statsHelpers.editStats)
 	.delete(statsHelpers.resetStats);
 
 module.exports = router;
