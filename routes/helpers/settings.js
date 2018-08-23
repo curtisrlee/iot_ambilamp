@@ -3,7 +3,7 @@ var db = require('../../models');
 exports.getSettings = function(req, res) {
 db.Settings.findOne({})
 	.then( function(settings) {
-			res.json(settings);
+		res.json(settings);
 	})
 	.catch( function(err) {
 		res.send(err);

@@ -10,7 +10,6 @@ router.route('/data')
 	.post(dataHelpers.createData)
 	.delete(dataHelpers.deleteData);
 
-
 router.route('/data/:id')
 	.get(dataHelpers.getOneData)
 	.put(dataHelpers.editData)

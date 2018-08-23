@@ -1,4 +1,6 @@
-var db = require('../../models');
+var express     = require('express'),
+    db          = require('../../models'),
+    router      = express.Router();
 
 exports.getData = function(req, res) {
 	db.Data.find()
@@ -11,6 +13,8 @@ exports.getData = function(req, res) {
 }
 
 exports.createData = function(req, res) {
+	var setting;
+	var stat;
 	db.Data.create(req.body)
 	.then (function(newData) {
 		res.json(newData);

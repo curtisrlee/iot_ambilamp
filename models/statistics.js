@@ -27,7 +27,7 @@ var statsSchema = new mongoose.Schema({
   },
   timeTotal: {
     type: Number,
-	required: 'You must increment number of readings'
+	  required: 'You must increment number of readings'
   }
 });
 
